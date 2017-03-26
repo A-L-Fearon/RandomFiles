@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/capabilities_1_1_1.dtd" >
+<WMT_MS_Capabilities version="1.1.1">
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>Web Map Service - GeoWebCache</Title>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+</Service>
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+          </Get>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/jpeg</Format>
+      <Format>image/png</Format>
+      <DCPType>
+        <HTTP>
+          <Get>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+          </Get>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/plain</Format>
+      <Format>application/json</Format>
+      <Format>application/vnd.ogc.gml</Format>
+      <Format>text/html</Format>
+      <DCPType>
+        <HTTP>
+        <Get>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+        </Get>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+    <DescribeLayer>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+        <Get>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+        </Get>
+        </HTTP>
+      </DCPType>
+    </DescribeLayer>
+    <GetLegendGraphic>
+      <Format>image/png</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/gif</Format>
+      <DCPType>
+        <HTTP>
+        <Get>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geonode-rris.biopama.org/geoserver/gwc/service/wms?SERVICE=WMS&amp;"/>
+        </Get>
+        </HTTP>
+      </DCPType>
+    </GetLegendGraphic>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+  </Exception>
+  <Layer>
+    <Title>GeoWebCache WMS</Title>
+    <Abstract>Note that not all GeoWebCache instances provide a full WMS service.</Abstract>
+    <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+    <Layer queryable="1">
+      <Name>geonode:car_poli_capitals_wgs84</Name>
+      <Title>Country Capitals in the Caribbean Region</Title>
+      <Abstract>Country Capitals in the Caribbean Region</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:_100k_cameroun_nyong_and_soho_project_area_roads_1992_lzw</Name>
+      <Title>Map of Roads for Field Mission in Cameroon</Title>
+      <Abstract>Annotated map with updated roads for field mission in Cameroon (area south of Yaoundé, prepared by Natural Resources Institute). Covers three protected areas (Mefou, Ototomo, Mbalmayo).</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="0.0" maxx="22.5" maxy="22.5"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="0.0" maxx="22.5" maxy="22.5"/>
+      <BoundingBox SRS="EPSG:900913" minx="0.0" miny="0.0" maxx="2504688.5425000004" maxy="2504688.5425000004"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:global200_mar_2002_pol</Name>
+      <Title>WWF's Global 200 marine priority ecoregions 2002</Title>
+      <Abstract>WWF’s Global 200 project analyzed global patterns of biodiversity to identify a set of the Earth's terrestrial, freshwater, and marine ecoregions that harbor exceptional biodiversity and are representative of its ecosystems. This process yielded 238 ecoregions--the Global 200--comprised of 142 terrestrial, 53 freshwater, and 43 marine priority ecoregions. Effective conservation in these ecoregions would help conserve the most outstanding and representative habitats for biodiversity on this planet.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:points1</Name>
+      <Title>IMET Sessions for Central Africa </Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:nyungwe_landcover_south</Name>
+      <Title>Nyungwe National Park (South), Landcover Segments</Title>
+      <Abstract>Landcover segments created using JRC's IMPACT classification tool for the southern part of Nyungwe National Park and a buffer of 20km surrounding it. These segments show automatically-derived landcover for the years 1990, 2000 and 2010, but this has not yet been validated by experts.  The classes are as follows: 00=no data (no data available) - 01=tree cover (≥70% of tree cover) - 07 =tree cover mosaic (30–70% of tree cover) - 09=other wooded land (≥70% of other wooded land) - 11=bare soil (low vegetation cover (more than 4%)) - 12=agriculture (planted vegetation) - 13=water (≥50% of water) - 14=other land (≥70% of other land cover) - 15=cloud/shadow (≥10% of clouds and shadows) - 16=urban/artificial (impervious surface, buildings). </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-626172.135625001" maxx="3757032.813749999" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:protected_areas_overlapping_ei_activity_or_interest</Name>
+      <Title>Protected Areas overlapping with Extractive Industry Activity</Title>
+      <Abstract>The dataset is an abstraction from the World Database on Protected Areas (WDPA) showing all protected areas in which extractive industries are activity operating or have a license to operate in. 
+
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:pnv_vecea_v2_0_ethiopia</Name>
+      <Title>pnv_vecea_v2_0_ethiopia</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="0.0" maxx="90.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="0.0" maxx="90.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="0.0" miny="0.0" maxx="1.0018754169999998E7" maxy="1.0018754169999998E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:vulnerability_ctry</Name>
+      <Title>vulnerability_ctry</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:gaul2015_caribbean</Name>
+      <Title>BIOPAMA Countries of the Caribbean (GAUL 2015)</Title>
+      <Abstract>16 Countries of the Caribbean BIOPAMA region.
+“Source of Administrative boundaries: The Global Administrative Unit Layers (GAUL) dataset [2015], implemented by FAO within the CountrySTAT and Agricultural Market Information System (AMIS) projects”</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_mar_magrovemosaic_wgs84</Name>
+      <Title>Mangrove</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:selected_iucn_pas</Name>
+      <Title>Selected IUCN Protected Areas</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:ppow_2012_pol</Name>
+      <Title>Pelagic Provinces of the World 2012</Title>
+      <Abstract>The Pelagic Provinces of the World (PPOW) are a classification system of the world’s off-shelf surface waters (&lt; 200 m depths). They represent a nested system of 4 realms, 7 biomes and 37 pelagic provinces, and were delineated based on review of existing information and expert knowledge of pelagic biota. They complement the system of marine ecoregions of the world (MEOW), which cover coastal and shelf waters. The pelagic province boundaries shown here were extracted from a PPOW-MEOW dataset created by UNEP-WCMC. Original Shapefile and Metadata Online:  http://data.unep-wcmc.org/datasets/38</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:cw_africa_gaul_1</Name>
+      <Title>Countries of Central and West Africa (derived from GAUL)</Title>
+      <Abstract>Countries of Central and West Africa (derived from GAUL). </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:reptile_pre2016</Name>
+      <Title>Offshore islands Lizard survey data (pre 2016) Northeast Marine Management Area, Antigua and Barbuda</Title>
+      <Abstract>This data includes lizard survey data from May to June 2011. Data points exist for Redonda and the offshore islands of Antigua and Barbuda.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-67.5" miny="11.25" maxx="-56.25" maxy="22.5"/>
+      <BoundingBox SRS="EPSG:4326" minx="-67.5" miny="11.25" maxx="-56.25" maxy="22.5"/>
+      <BoundingBox SRS="EPSG:900913" minx="-7514065.6274999995" miny="1252344.2712499984" maxx="-6261721.356249999" maxy="2504688.5425000004"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:all_acp_poly_wdpa2015</Name>
+      <Title>Protected Areas of Africa, Caribbean, Pacific (ACP)</Title>
+      <Abstract>Protected areas of the entire ACP region (79 countries plus S. Sudan, plus disputed territories) (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [June 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:corridors_type_3_buff_agg_4326</Name>
+      <Title>African development corridors (50-km wide swath)</Title>
+      <Abstract>Layer maps 33 unique "development corridors" in Sub-Saharan Africa. These corridors involve large-scale expansion of infrastructure such as roads, railroads, pipelines, and port facilities.  This layer shows the corridors' broader zone of influence defined by a 50-km wide swath centered on each corridor. For details see: Laurance W.F., S. Sloan, L. Weng and J.A. Sayer (2015) Estimating the environmental costs of Africa’s massive “development corridors”. Current Biology 25 (24): 3202-3208.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:air_de_repos</Name>
+      <Title>air_de_repos</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="11.25" miny="5.625" maxx="16.875" maxy="11.25"/>
+      <BoundingBox SRS="EPSG:4326" minx="11.25" miny="5.625" maxx="16.875" maxy="11.25"/>
+      <BoundingBox SRS="EPSG:900913" minx="1252344.2712499984" miny="626172.135625001" maxx="1878516.4068749994" maxy="1252344.2712499984"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:socmon_sites_actual</Name>
+      <Title>Socio-economic Monitoring for Coastal Management (SocMon) Assessments, Caribbean</Title>
+      <Abstract>This dataset provides information  for the areas in the Caribbean area where Socio-economic Monitoring for Coastal Management (SocMon) Assessments were conducted. The information was provided by the Centre for Resource Management &amp; Environmental Studies. The creators of this dataset are Jehroum Wood and Jason Williams. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:firewood_active_jul_11_may_15_1</Name>
+      <Title>firewood_active_jul_11_may_15_1</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-626172.135625001" maxx="3757032.813749999" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:seagrass_kenya_landsat8</Name>
+      <Title>Kenya Seagrass</Title>
+      <Abstract>This Seagrass/ Submerged Vegetation data layer is an ArcGIS shapefile layer covering only the Coastal inter-tidal zone of the Kenyan Indian Ocean waters.
+The layer product has been generated from Landsat-8 OLI Sensor data at 30 meter resolution utilizing the Blue, Green and Red Spectral bands for interpretation.
+
+This data has been developed by RCMRD - SERVIR Eastern &amp; Southern Africa. 
+SERVIR is a joint USAID-NASA project. For more information on SERVIR, visit </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="33.75" miny="-11.25" maxx="45.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="33.75" miny="-11.25" maxx="45.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3757032.813749999" miny="-1252344.2712499984" maxx="5009377.085000001" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_mar_lagoons_wgs84_1</Name>
+      <Title>Caribbean Lagoons</Title>
+      <Abstract>This data layer was provided by The Nature Conservancy Caribbean team. 
+The Caribbean is one of the world's epicenters of biological diversity and species endemism with literally thousands of plants and animals found nowhere else on earth. Conservation has proven a challenge in this large, diverse, and globally-important area - one the Nature Conservancy is addressing through a strong on-the-ground presence led by country programs that have science-based conservation strategies. To address these problems and opportunities, The Nature Conservancy initiated a Regional Conservation Assessment for the Greater Caribbean Basin, designed to examine regional biodiversity and the associated threats and conservation opportunities. This follows a worldwide trend of recognizing the need to examine about and manage for the maintenance of functioning ecosystem processes and populations across appropriately large regions to help slow widespread environmental changes. To facilitate this approach, we have assembled, into a standard, seamless GIS database, the biological and socio-economic data necessary to analyze the regional-scale context of Caribbean biodiversity. We identified and mapped a range of coarse-filter targets that represent a full spectrum of terrestrial, freshwater and marine biodiversity using combinations of biophysical factors (such as climate, geology, major habitat type, elevation, depth etc.). Mapping Caribbean biodiversity provides the basis for conservation decision making. Coarse-filter mapping at the level of ecological communities, ecosystems and landscapes is an efficient method to represent all essential elements of biodiversity across the entire region. We assessed human impact in two ways: expert judgments and mapping of the relative intensity of human impacts. Local experts provided judgments on the condition of targets and this information is combined with maps of human activities in order to determine relative human impacts. Distribution of human activities is a critical factor in conservation and resource management. Not all human activities are threats to biodiversity and determining relative human impact and predicting ecological health is necessary for sound management. We suggest that by providing the latest analytical tools and comprehensive biodiversity and socio-economic data, we can assist conservation organizations, local communities and governments that are striving to meet their national or local conservation missions and leverage and enhance ongoing conservation efforts. These data and tools can be used to enable sound, pragmatic conservation decisions at-scale. In this way, this assessment will serve to enhance and unify ongoing local and national conservation efforts and provide a common vision of conservation success throughout the Greater Caribbean. We suggest that use of the data and tools can facilitate strategic partnerships amongst both local and regional organizations across the basin- a key to achieving lasting results. We hope to put in place a long-term information system that promotes the protection of the region's irreplaceable terrestrial, freshwater, coastal and marine biodiversity. We have designed simple data management systems to promote long-term use and dynamic updates of the database. Information is archived in a standardized structure on a freely accessible spatial warehouse using simple, robust systems that are easily and accessible to partners and stakeholders. Standardization and open access promotes updateable archiving systems - so that new information can be easily integrated and compared with existing information - and also facilitations information sharing and collaboration.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:nyungwe_landcover_north</Name>
+      <Title>Nyungwe National Park (North), Landcover Segments</Title>
+      <Abstract>Landcover segments created using JRC's IMPACT classification tool for the northern part of Nyungwe National Park and a buffer of 20km surrounding it. These segments show automatically-derived landcover for the years 1990, 2000 and 2010, but this has not yet been validated by experts.  The classes are as follows: 00=no data (no data available) - 01=tree cover (≥70% of tree cover) - 07 =tree cover mosaic (30–70% of tree cover) - 09=other wooded land (≥70% of other wooded land) - 11=bare soil (low vegetation cover (more than 4%)) - 12=agriculture (planted vegetation) - 13=water (≥50% of water) - 14=other land (≥70% of other land cover) - 15=cloud/shadow (≥10% of clouds and shadows) - 16=urban/artificial (impervious surface, buildings). </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-2.8125" maxx="30.9375" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-2.8125" maxx="30.9375" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-313086.06781249866" maxx="3443946.7459375" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:global200_fresh_2002_pol</Name>
+      <Title>WWF's Global 200 freshwater priority ecoregions 2002</Title>
+      <Abstract>WWF’s Global 200 project analyzed global patterns of biodiversity to identify a set of the Earth's terrestrial, freshwater, and marine ecoregions that harbor exceptional biodiversity and are representative of its ecosystems. This process yielded 238 ecoregions--the Global 200--comprised of 142 terrestrial, 53 freshwater, and 43 marine priority ecoregions. Effective conservation in these ecoregions would help conserve the most outstanding and representative habitats for biodiversity on this planet.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:corridors_type_3_dis</Name>
+      <Title>African development corridors (lines only)</Title>
+      <Abstract>Layer maps 33 unique "development corridors" in Sub-Saharan Africa. These corridors involve large-scale expansion of infrastructure such as roads, railroads, pipelines, and port facilities.  This layer shows the actual railway/road or railway/pipeline corridors as lines. For details see: Laurance W.F., S. Sloan, L. Weng and J.A. Sayer (2015) Estimating the environmental costs of Africa’s massive “development corridors”. Current Biology 25 (24): 3202-3208.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:bc_pubs</Name>
+      <Title>bc_pubs</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-135.0" miny="45.0" maxx="-112.5" maxy="67.5"/>
+      <BoundingBox SRS="EPSG:4326" minx="-135.0" miny="45.0" maxx="-112.5" maxy="67.5"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.5028131254999999E7" miny="5009377.085000001" maxx="-1.001875417E7" maxy="1.0018754169999998E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_july2015_mergpolspnts_acp_terrmar_all</Name>
+      <Title>Combined Marine-Terrestrial Protected Areas of Africa, Caribbean, Pacific (ACP)</Title>
+      <Abstract>Combined marine-terrestrial protected areas of the entire ACP region (79 countries plus S. Sudan, plus disputed territories) (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [July 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.
+
+Includes all PAs with Marine = 1. Combines polygons and buffered points.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:caribbean_wdpa2015</Name>
+      <Title>Protected Areas of the Caribbean</Title>
+      <Abstract>Protected areas of the Caribbean (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [June 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:sadc_countries</Name>
+      <Title>SADC Countries</Title>
+      <Abstract>The SADC member countries. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_july2015_mergpolspnts_acp_mar_all</Name>
+      <Title>Marine Protected Areas of Africa, Caribbean, Pacific (ACP)</Title>
+      <Abstract>Entirely marine protected areas of the entire ACP region (79 countries plus S. Sudan, plus disputed territories) (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [July 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.
+
+Includes all PAs with Marine = 2.  Combines polygons and buffered points.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:global_accessibility_map</Name>
+      <Title>Travel Time to Major Cities. A Global Map of Accessibility </Title>
+      <Abstract>This Global Map of Accessibility shows the calculated travel time (overland) from any given location to a city with more than 50000 inhabitants. We define accessibility as the travel time to a location of interest using land (road/off road) or water (navigable river, lake and ocean) based travel. This accessibility is computed using a cost-distance algorithm which computes the "cost" of travelling between two locations on a regular raster grid. Generally this cost is measured in units of time. The cells in this raster grid contain values which represent the cost required to travel across them, hence this raster grid is often termed a friction-surface.The friction-surface contains information on the transport network and environmental and political factors that affect travel times between locations. Transport networks can include road and rail networks, navigable rivers and shipping lanes. Environmental factors generally contribute to travel speeds off the transport network, such as land cover and slope. Political factors - such as national boundaries and border crossings - can act as barriers or travel delays. The locations of interest are termed targets and range from cities, markets, health facilities, educational establishments, protected areas, or any type of location where for which you want to estimate the potential accessibility.The data are in geographic projection with a resolution of 30 arc seconds. The download format is ESRI Grid with pixel values representing minutes of land based travel time to the nearest city of 50,000 people (year 2000). </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:active_exploration1</Name>
+      <Title>Active mineral exploration in the EAC region - Suppliment</Title>
+      <Abstract>Mineral facilities and operations outside the United States compiled by the National Minerals Information Center of the USGS. This representation combines source data from five previous publications. http://minerals.usgs.gov/minerals/pubs/nmic/</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eastern_africa_coast_degradation_hotspots</Name>
+      <Title>Eastern Africa Coast Degradation Hotspots</Title>
+      <Abstract>Coastal and marine environmental degradation has continued to intensify in the coastal zones
+of Kenya, Tanzania, Mozambique and Madagascar. SERVIR Eastern and Southern Africa
+identified and mapped some of the erosion/degradation hotspots in these four coastal zones.
+A total of 40 hotspots were identified and mapped, 10 from each of the four coastal zones.
+Four different types of degradation hotspots were identified. The identified hotspots include:
+deforested areas, Sedimentation, Removed vegetation and contamination of fresh water tables through increased salinity and</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="90.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="90.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="0.0" miny="-1.001875417E7" maxx="1.0018754169999998E7" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:klc_201508_1</Name>
+      <Title>klc_201508_1</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_july2015_mergpolspnts_acp_terr_all</Name>
+      <Title>Terrestrial Protected Areas of Africa, Caribbean, Pacific (ACP)</Title>
+      <Abstract>Entirely terrestrial protected areas of the entire ACP region (79 countries plus S. Sudan, plus disputed territories) (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [July 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.
+
+Includes all PAs with Marine = 0. Combines polygons and buffered points.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:cp84</Name>
+      <Title>Caribbean Coral Reefs Protection</Title>
+      <Abstract> Caribbean Coral Reefs Protection obtained through an intersection analysis using Coral reefs coverage by TNC (2013) and the WDPA 2014 provided by WCMC.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:cw_africa_gaul</Name>
+      <Title>BIOPAMA Countries of Central and Western Africa (GAUL)</Title>
+      <Abstract>25 Countries of the Central and Western African BIOPAMA region.
+“Source of Administrative boundaries: The Global Administrative Unit Layers (GAUL) dataset [2014], implemented by FAO within the CountrySTAT and Agricultural Market Information System (AMIS) projects”</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:completeness_index_stropp_et_al_2016</Name>
+      <Title>completeness_index_stropp_et_al_2016</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:cyamudongo_forest</Name>
+      <Title>Cyamudongo Forest</Title>
+      <Abstract>Boundary of a separate subsection to the West of Nyungwe National Park.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.828125" miny="-2.63671875" maxx="29.00390625" maxy="-2.4609375"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.828125" miny="-2.63671875" maxx="29.00390625" maxy="-2.4609375"/>
+      <BoundingBox SRS="EPSG:900913" minx="3209132.1950781234" miny="-293518.18857421726" maxx="3228700.0743164048" maxy="-273950.30933593586"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_mar_lagoons_wgs84</Name>
+      <Title>car_mar_lagoons_wgs84</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eac_amphibian_richness</Name>
+      <Title>EAC Amphibian Richness 2016</Title>
+      <Abstract>This dataset  contains data on amphibian species range richness for the 5 EAC countries Burundi, Kenya, Rwanda, Tanzania and Uganda. The species range polygons were obtained from the UCN Red List, downloaded on 2016-02-04. Species were gridded using level 10 hexagons from the ISEA grid (http://webpages.sou.edu/~sahrk/dgg/isea.old/isea.html). These hexagons give roughly equal area of 863 sq. km. at all locations on the globe. Species were divided by threat category, and for each category (CR, EN, VU, NT, LC, DD) a count and a species list is available for every hexagon.
+The IUCN Red List of Threatened Species contains assessments for just over 76,000 species, of which about two-thirds have spatial data. This spatial data provided below is for comprehensively assessed taxonomic groups. It is important to note that some species such as those listed as Data Deficient are not mapped and subspecies are mapped within the parental species. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:completeness_index</Name>
+      <Title>Plant Knowledge Completeness Index</Title>
+      <Abstract>Indicator of inventory completeness of flowering plants calculated for Africa and African PAs.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:igad_member_states</Name>
+      <Title>IGAD Member States</Title>
+      <Abstract>Administrative boundaries for the IGAD Member States.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:_762</Name>
+      <Title>Landcover classifications for Nakuru National Park, Kenya - generated by JRC for 1990, 2000 and 2010</Title>
+      <Abstract>Landcover segments created using JRC's IMPACT classification tool for  Lake Nakuru designated protected area, and a buffer of 20km surrounding it. These segments show automatically-derived landcover for the years 1990, 2000 and 2010, but this has not yet been validated by experts. The classes are as follows: 00=no data (no data available) - 01=tree cover (≥70% of tree cover) - 07 =tree cover mosaic (30–70% of tree cover) - 09=other wooded land (≥70% of other wooded land) - 11=bare soil (low vegetation cover (more than 4%)) - 12=agriculture (planted vegetation) - 13=water (≥50% of water) - 14=other land (≥70% of other land cover) - 15=cloud/shadow (≥10% of clouds and shadows) - 16=urban/artificial (impervious surface, buildings).</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="35.15625" miny="-1.40625" maxx="36.5625" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="35.15625" miny="-1.40625" maxx="36.5625" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3913575.84765625" miny="-156543.0339062512" maxx="4070118.881562501" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:gaul2015_es_africautf8_1</Name>
+      <Title>BIOPAMA Countries of Eastern and Southern Africa (GAUL 2015)</Title>
+      <Abstract>23 Countries of the BIOPAMA Eastern and Southern Africa region.
+“Source of Administrative boundaries: The Global Administrative Unit Layers (GAUL) dataset [2015], implemented by FAO within the CountrySTAT and Agricultural Market Information System (AMIS) projects”
+Includes South Sudan (ACP Observer status in 2015) and disputed territories</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:median_year_stropp_et_al_2016</Name>
+      <Title>median_year_stropp_et_al_2016</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:oil_and_gas_pipeline</Name>
+      <Title>Oil and Gas Pipeline in East Africa</Title>
+      <Abstract>Data provided by Transboundary Africa Consulting.
+
+The  pipeline connects the countries in East Africa to  Mombasa to export oil and gas. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_lc_urban_wgs84</Name>
+      <Title>Landcover  - Urban</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:oil_and_gas_fields</Name>
+      <Title>Oil and Gas Field in the EAC Region.</Title>
+      <Abstract>Oil and gas field information for the EAC region obtained from Transboundary Consulting Services.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:_50k_sa_31_vi_gabon_booue_2a2_lzw</Name>
+      <Title>IGN Topographic Map of Gabon</Title>
+      <Abstract>IGN Topographic map of Gabon, sheet SA-32-VI (1985). 1:50,000 scale. Covers part of Lopé National Park (North)</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_bh_class_acp_wgs84</Name>
+      <Title>Marine Habitat Structure indicators: The Habitat Heterogeneity Indicator (HHI) </Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:pas_ci_year_crop_epsg_4326</Name>
+      <Title>pas_ci_year_crop_epsg_4326</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:iitf_cjs44_barbados_landcov_v2_geotiff</Name>
+      <Title>BARBADOS LAND COVER v2</Title>
+      <Abstract>Land cover map of Barbados. Forest formation and land cover maps for several Caribbean islands were developed from satellite imagery as part of a multi-organizational project. For the map of Barbados (Helmer et al., 2008), we used decision tree software as the original approach to classify Landsat ETM+ images. Unfortunately the high cloud cover in the available Landsat images led to a low-quality classified map in many areas. Ikonos images for the years 2001 and 2002 where obtained and used as the basis to classify most of the island by "heads-up" digitizing. The forest classification scheme relates closely to that of Areces-Malea et al. (Areces-Mallea et al., 1999), with modifications similar to those in Helmer et al. (Helmer et al., 2002).
+This is version 2 of the Barbados map. In this version, the high resolution imagery viewable on Google Earth was used to interpret land cover in areas that were cloud-obscured in the original map and imagery. In addition, a projection problem was corrected.
+Citation: Helmer, E.H.; Kennaway, T.A.; Pedreros, D.H.; Clark, M.L.; Marcano-Vega, H.; Tieszen, L.L., Ruzycki, T.R.; Schill, S.R.; Carrington, C.M.S. 2008. Land cover and forest formation distributions for St. Kitts, Nevis, St. Eustatius, Grenada and Barbados from decision tree classification of cloud-cleared satellite imagery. Caribbean Journal of Science. 44(2):175-198.
+Data are posted at the FSGeodata Clearinghouse (&lt;https://data.fs.usda.gov/geodata/&gt;).</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-59.765625" miny="12.65625" maxx="-59.0625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:4326" minx="-59.765625" miny="12.65625" maxx="-59.0625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:900913" minx="-6731350.457968749" miny="1408887.3051562496" maxx="-6574807.4240625" maxy="1565430.3390625007"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:smalltreerecentjul11may15_me</Name>
+      <Title>Tree Cutting</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-626172.135625001" maxx="3757032.813749999" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:study_areas</Name>
+      <Title>ROADLESS FOREST  Study Areas</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:afria_excl_igadshp</Name>
+      <Title>IGAD Country Mask</Title>
+      <Abstract>IGAD country mask.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_hurricanes_1945_2001_wgs84_1</Name>
+      <Title>car_hurricanes_1945_2001_wgs84_1</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:oil_and_gas_licenses</Name>
+      <Title>Oil and Gas Concessions </Title>
+      <Abstract>The data is provided by  Transboundary Africa Consulting. It provides a static view of publicly available oil and gas licensing data as 2014.
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_hz_earthquakeusgs_1792_1997_wgs84</Name>
+      <Title>USGS Earthquakes</Title>
+      <Abstract>Earthquake data for the Caribbean Region</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:sadc_tfcaboundaries</Name>
+      <Title>TFCA Boundaries</Title>
+      <Abstract>The boundaries of the southern Africa Transfrontier Conservation Areas.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-45.0" maxx="45.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-45.0" maxx="45.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="0.0" miny="-5009377.085000001" maxx="5009377.085000001" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:gaul2015_acp</Name>
+      <Title>BIOPAMA Countries of Africa, Caribbean, Pacific (GAUL 2015)</Title>
+      <Abstract>79 Countries of the BIOPAMA ACP region.
+“Source of Administrative boundaries: The Global Administrative Unit Layers (GAUL) dataset [2015], implemented by FAO within the CountrySTAT and Agricultural Market Information System (AMIS) projects”
+Includes South Sudan (ACP Observer status in 2015) and disputed territories</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:active_exploration2_3</Name>
+      <Title>Active mineral exploration in the EAC region </Title>
+      <Abstract>Mineral facilities and operations outside the United States compiled by the National Minerals Information Center of the USGS. This representation combines source data from five previous publications. http://minerals.usgs.gov/minerals/pubs/nmic/</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:nakuru</Name>
+      <Title>Unvalidated landcover classifications for Nakuru National Park, Kenya - generated by JRC for 1990, 2000 and 2010</Title>
+      <Abstract>Landcover segments created using JRC's IMPACT classification tool for  Lake Nakuru designated protected area, and a buffer of 20km surrounding it. These segments show automatically-derived landcover for the years 1990, 2000 and 2010, but this has not yet been validated by experts. The classes are as follows: 00=no data (no data available) - 01=tree cover (>70% of tree cover) - 07 =tree cover mosaic (30-70% of tree cover) - 09=other wooded land (>70% of other wooded land) - 11=bare soil (low vegetation cover (more than 4%)) - 12=agriculture (planted vegetation) - 13=water (>50% of water) - 14=other land (>70% of other land cover) - 15=cloud/shadow (>10% of clouds and shadows) - 16=urban/artificial (impervious surface, buildings).</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="35.15625" miny="-1.40625" maxx="36.5625" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="35.15625" miny="-1.40625" maxx="36.5625" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3913575.84765625" miny="-156543.0339062512" maxx="4070118.881562501" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:mars_cropmask250m_v2_2_afr_copy</Name>
+      <Title>mars_cropmask250m_v2_2_afr_copy</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:oil_and_gas_basins</Name>
+      <Title>Oil and Gas Basins</Title>
+      <Abstract>Oil and Gas basin information obtained from Transboundary Consulting Services.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:kenya_protected_areas</Name>
+      <Title>Kenya Protected Areas</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car</Name>
+      <Title>Caribbean Coral Reefs </Title>
+      <Abstract>The coral reef map displays data from multiple sources, providing the most accurate and current information for this region to date. The first step towards this final product began with mapping regional data which covered as many countries in the CLME region as possible. This included information from 3 separate datasets: (1.) For the insular Caribbean, the best available information was compiled by Brigham Young University students through a Nature Conservancy contract in 2011. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eez_v8_2014_acp</Name>
+      <Title>Exclusive Economic Zones (EEZ) - ACP Countries</Title>
+      <Abstract>Extract of Exclusive Economic Zones (EEZ) for African, Caribbean, Pacific (ACP) Countries, from the Flanders Marine Institute (2014)</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:beachmosaic</Name>
+      <Title>car_mar_beachmosaic_2013 </Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_paswgs84</Name>
+      <Title>Caribbean Protected Areas 2015</Title>
+      <Abstract>The protected area shapefile was compiled by the Nature Conservancy (TNC) with substantial submissions and assistance from 21 different governments with sometimes multiple representatives within a government in the insular Caribbean. The data represents a core dataset in conservation for the region. The Nature Conservancy works to keep this file as up to date as possible and uses it heavily in representing what is protected across the insular Caribbean. The origins of the data are from the World Database on Protected Areas (WDPA). </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:ecoregions_eac</Name>
+      <Title>EAC Eco-Regions</Title>
+      <Abstract>Ecoregions covering the 5 EAC (East African Community) countries, with statistics  on regional protection based on August 2014 WDPA (World Database of Protected Areas).</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:central_africa_childsite</Name>
+      <Title>Central Africa Childsite</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:gbif_all_species_rwanda_fromjan1980</Name>
+      <Title>GBIF data for Rwanda - all species from Jan 1980 to 7 July 2015</Title>
+      <Abstract>Occurrence records downloaded from GBIF, covering the time period between 1 January 1980 and 13 July 2015. GBIF.org (13th July 2015) 
+Please cite as: GBIF Occurrence Download http://doi.org/10.15468/dl.ylooyo
+QUERY PARAMETERS
+----------------------------
+Country	   Rwanda
+Spatial issues	false
+Georeferenced	true
+Date	>= 1980-01-01
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-2.8125" maxx="30.9375" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-2.8125" maxx="30.9375" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-313086.06781249866" maxx="3443946.7459375" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_july2015_mergpolspnts_acp_all</Name>
+      <Title>All Protected Areas of Africa, Caribbean, Pacific (ACP)</Title>
+      <Abstract>All protected areas of the entire ACP region (79 countries plus S. Sudan, plus disputed territories) (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [July 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.
+
+Combines polygons and buffered points.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:global200_terr_2002_pol</Name>
+      <Title>WWF's Global 200 terrestrial priority ecoregions 2002</Title>
+      <Abstract>WWF’s Global 200 project analyzed global patterns of biodiversity to identify a set of the Earth's terrestrial, freshwater, and marine ecoregions that harbor exceptional biodiversity and are representative of its ecosystems. This process yielded 238 ecoregions--the Global 200--comprised of 142 terrestrial, 53 freshwater, and 43 marine priority ecoregions. Effective conservation in these ecoregions would help conserve the most outstanding and representative habitats for biodiversity on this planet.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:glc2000_v1_1</Name>
+      <Title>Global Land Cover Map for the Year 2000 (GLC 2000)</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:barbados_apr_2016_wdpa</Name>
+      <Title>barbados_apr_2016_wdpa</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-59.765625" miny="13.0078125" maxx="-59.4140625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:4326" minx="-59.765625" miny="13.0078125" maxx="-59.4140625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:900913" minx="-6731350.457968749" miny="1408887.3051562496" maxx="-6574807.4240625" maxy="1565430.3390625007"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:pa_9148_wgs84_new</Name>
+      <Title>pa_9148_wgs84_new</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-626172.135625001" maxx="3757032.813749999" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:mineral_licenses</Name>
+      <Title>Mineral Licenses for the EAC</Title>
+      <Abstract>The data is provided by  Transboundary Africa Consulting. It provides a static view of publicly available mining licensing data as 2014.
+
+See: http://www.spatialdimension.com/Map-Portals for  selected country mining cadastre portals.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:pacific_wdpa2015_1</Name>
+      <Title>Protected Areas of the Pacific</Title>
+      <Abstract>Protected areas of the Pacific (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [June 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:landbird_pre2016</Name>
+      <Title>NEMMA Landbird surveys</Title>
+      <Abstract>This dataset was created by Lesley Mitchell, an intern working with the Environmental Awareness Group in Antigua and Barbuda. This assignment was carried out under the BIOPAMA Caribbean Protected Areas Gateway project. </Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-61.875" miny="16.875" maxx="-61.5234375" maxy="17.2265625"/>
+      <BoundingBox SRS="EPSG:4326" minx="-61.875" miny="16.875" maxx="-61.5234375" maxy="17.2265625"/>
+      <BoundingBox SRS="EPSG:900913" minx="-6887893.491875" miny="1917652.1653515622" maxx="-6848757.7333984375" maxy="1956787.923828125"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_hurricanes_1945_2001_wgs84</Name>
+      <Title>Hurricane and Tropical Storm Paths, Caribbean, 1945- 2001</Title>
+      <Abstract>Hurricane and Tropical Storm paths and data for the Caribbean.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:klc_201508</Name>
+      <Title>Key Landscapes for Conservation (KLC) 2015</Title>
+      <Abstract>Key Landscapes for Conservation as identified by the EU Strategic Approach to Wildlife Conservation in Africa</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:rampao_network_childsite</Name>
+      <Title>Rampao Network Childsite</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-45.0" miny="0.0" maxx="0.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-45.0" miny="0.0" maxx="0.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-5009377.085000001" miny="0.0" maxx="0.0" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_soec_censusgdp_1980_1999_wgs84</Name>
+      <Title>GDP 1999</Title>
+      <Abstract>Gross Domestic Product and census data for each country in the Caribbean Region:  1999.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="0.0" maxx="0.0" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eac_countries</Name>
+      <Title>EAC Countries</Title>
+      <Abstract>Boundaries for Burundi, Kenya, Rwanda, Uganda, South Sudan &amp; Tanzania. 
+
+Source: ESRI</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:bstp_reefwgs84</Name>
+      <Title>bstp_reefwgs84</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-59.765625" miny="13.0078125" maxx="-59.4140625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:4326" minx="-59.765625" miny="13.0078125" maxx="-59.4140625" maxy="13.359375"/>
+      <BoundingBox SRS="EPSG:900913" minx="-6731350.457968749" miny="1408887.3051562496" maxx="-6574807.4240625" maxy="1565430.3390625007"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:ioc_countries</Name>
+      <Title>IOC Countries</Title>
+      <Abstract>Indian Ocean Commission member countries</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="90.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="90.0" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="0.0" miny="-1.001875417E7" maxx="1.0018754169999998E7" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:es_africa_wdpa2015</Name>
+      <Title>Protected Areas of Eastern &amp; Southern Africa</Title>
+      <Abstract>Protected areas of Eastern &amp; Southern Africa (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [June 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:pa_9148_wgs84</Name>
+      <Title>Nyungwe functional habitat types</Title>
+      <Abstract>Several environmental variables were used for establishing different habitat natural types in protected areas through automatic segmentation of image, based on a region growing procedure, followed by multivariate analysis using the euclidean distance: percentage of tree cover, percentage of grassland cover, elevation, slope, aridity, biotemperature, precipitation, Normalized Difference Vegetation index (NDVI) and Normalized Difference Water index (NDWI), some of the representing long term annual averages and all of them mapped at 1 km2 globally.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="28.125" miny="-5.625" maxx="33.75" maxy="0.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="3130860.6781250015" miny="-626172.135625001" maxx="3757032.813749999" maxy="0.0"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:bc_municipality</Name>
+      <Title>bc_municipality</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-135.0" miny="45.0" maxx="-90.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-135.0" miny="45.0" maxx="-90.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.5028131254999999E7" miny="5009377.085000001" maxx="-1.001875417E7" maxy="1.0018754169999998E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:completeness_index_200_rec_1a</Name>
+      <Title>Completeness Index of Flowering Plants</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:countries</Name>
+      <Title>Global Countries</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:export_output_4</Name>
+      <Title>Udvardy's Biogeographical Provinces 1975</Title>
+      <Abstract>The biogeographical provinces developed by Udvardy provide a bioregional classification of terrestrial ecosystems. The dataset includes 186 biogeographical provinces within eight biogeographic realms, representing 14 major biome types. The Udvardy scheme has a long history of use in the UNESCO World Heritage Convention and UNESCO’s Man and the Biosphere Programme. Shapefile and Metadata Online: http://www.unep-wcmc.org/resources-and-data/udvardys-biogeographical-provinces</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:west_africa_childsite</Name>
+      <Title>West Africa Childsite</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:rivers</Name>
+      <Title>rivers</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:biodiversity_hotspots_2011_pol</Name>
+      <Title>35 Biodiversity Hotspots 2011</Title>
+      <Abstract>The terrestrial biodiversity hotspots identified by Conservation International and partners delineate large regions characterized both by exceptional levels of plant endemism and by serious levels of habitat loss. To qualify as a hotspot, a region must meet two strict criteria: it must contain at least 1,500 species of vascular plants (> 0.5 percent of the world's total) as endemics, and it has to have lost at least 70 percent of its original habitat.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:wdpa_bath_class_acp_wgs84</Name>
+      <Title>Marine Habitat Structure indicators - Habitat Complexity Indicator (HCI) </Title>
+      <Abstract>Marine Habitat Structure indicators: 
+- The Habitat Complexity Indicator (HCI) is obtained using the GEBCO data set of bathymetry (1Km resolution). We calculated the standard deviation of bathymetry. Bathymetry documents the changing morphology of the substrate and its standard deviation provides information on the vertical relief variability. We used the standard deviation + the minimum and the maximum of the bathymetry of each MPAs to run a multivariate analyses and classify the habitats most likely to support a larger variety of species as topographic complexity is correlated to species diversity. The value range is from 1 (flat) to 10 (high complexity);
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:car_mar_coralreefmosaic_2013_wgs84lb</Name>
+      <Title>car_mar_coralreefmosaic_2013_wgs84lb</Title>
+      <Abstract>null</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:bahamas_seamounts</Name>
+      <Title>Bahamas Seamounts Geomorphic</Title>
+      <Abstract>Seamount geomorphic layer for the Bahamas</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eac_mask_wgs84_</Name>
+      <Title>EAC mask</Title>
+      <Abstract>A mask for the EAC countries.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:ca</Name>
+      <Title>ca</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-90.0" miny="0.0" maxx="-45.0" maxy="45.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-1.001875417E7" miny="0.0" maxx="-5009377.085000001" maxy="5009377.085000001"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:protected_areas_within_a_20km_raduis_of_ei_activity_or_interest</Name>
+      <Title>Protected Areas within a 20km radius of Extractive Industry activity or interest </Title>
+      <Abstract>The dataset is an abstraction from the World Database on Protected Areas (WDPA) showing all protected areas within a 20km radius of extractive industry activity or interest  (as expressed by known mineral deposits).
+
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:eac_protected_areas</Name>
+      <Title>East Africa Protected Areas</Title>
+      <Abstract>An extraction of the Protected Areas, from the WDPA,  for the EAC region.
+
+</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:landbird_pre2016_1</Name>
+      <Title>Land birds survey (pre 2016) Antigua and Barbuda</Title>
+      <Abstract>Data includes land bird data from May to June 2011  collected for Barbuda, and Antigua and Barbuda offshore islands.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-61.875" miny="16.875" maxx="-61.5234375" maxy="17.2265625"/>
+      <BoundingBox SRS="EPSG:4326" minx="-61.875" miny="16.875" maxx="-61.5234375" maxy="17.2265625"/>
+      <BoundingBox SRS="EPSG:900913" minx="-6887893.491875" miny="1917652.1653515622" maxx="-6848757.7333984375" maxy="1956787.923828125"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:cw_africa_wdpa2015</Name>
+      <Title>Protected Areas of Central and Western Africa</Title>
+      <Abstract>Protected areas of Central &amp; Western Africa (source IUCN and UNEP-WCMC (2015), The World Database on Protected Areas (WDPA) [On-line], [June 2015], Cambridge, UK: UNEP-WCMC. Available at: www.protectedplanet.net.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:completeness_index_200_rec_1</Name>
+      <Title>completeness_index_200_rec_1</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:ecowas</Name>
+      <Title>ecowas countries 2015</Title>
+      <Abstract>ecowas countries 2015</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:kenya_major_rivers</Name>
+      <Title>Kenya Major Rivers</Title>
+      <Abstract>Shows the major river courses in Kenya.</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="0.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+    <Layer queryable="1">
+      <Name>geonode:stream</Name>
+      <Title>stream</Title>
+      <Abstract>No abstract provided</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"/>
+    </Layer>
+  </Layer>
+</Capability>
+</WMT_MS_Capabilities>
